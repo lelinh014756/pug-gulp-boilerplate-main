@@ -1,0 +1,13 @@
+// footer
+.wrapFooter {
+  margin-top: 32px;
+  .footer {
+    padding-block: 32px;
+    border-top: 1px solid $color2;
+  }
+  p {
+    text-align: center;
+    @include text14;
+  }
+}
+// end footer

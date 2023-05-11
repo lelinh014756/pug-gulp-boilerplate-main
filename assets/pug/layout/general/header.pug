@@ -1,0 +1,10 @@
+// header
+header.wrapHeader
+    .container-xxl
+        h2.heading Pug Gulp Starter
+        p.desc Starter code for your Pug Gulp Boilerplate with SCSS
+        ul.headerNavList
+            each item in data.header.menu
+                li.headerNavItem
+                    a(href= item.link)= item.title 
+// end header

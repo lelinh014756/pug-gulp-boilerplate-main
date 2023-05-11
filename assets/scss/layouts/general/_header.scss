@@ -1,0 +1,23 @@
+// header
+.wrapHeader {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  .heading {
+    @include text30;
+    margin-bottom: 5px;
+  }
+  .desc {
+    @include text20;
+  }
+  .headerNavList {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color2;
+  }
+  .headerNavItem {
+  }
+}
+// end header

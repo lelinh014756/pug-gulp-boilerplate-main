@@ -1,0 +1,72 @@
+@import '../abstracts/variables';
+// SFProRounded
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font1}-Light.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font1}-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font1}-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font1}-SemiBold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font1}-Bold.otf);
+    font-weight: 700;
+}
+// end SFProRounded
+
+// RobotoSlab
+@font-face{
+    font-family: $font2;
+    src: url(../fonts/#{$font2}-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: $font2;
+    src: url(../fonts/#{$font2}-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: $font2;
+    src: url(../fonts/#{$font2}-SemiBold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: $font2;
+    src: url(../fonts/#{$font2}-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: $font3;
+    src: url(../fonts/#{$font3}-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: $font3;
+    src: url(../fonts/#{$font3}-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: $font3;
+    src: url(../fonts/#{$font3}-SemiBold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: $font3;
+    src: url(../fonts/#{$font3}-Bold.otf);
+    font-weight: 700;
+}
+// end RobotoSlab

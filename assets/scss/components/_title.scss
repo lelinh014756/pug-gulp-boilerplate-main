@@ -1,0 +1,221 @@
+.titleShadow1 {
+  text-shadow: $textShadow1;
+}
+
+.titleLineSlide {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $color30;
+    transition: .5s;
+  }
+
+  &:hover, &.active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.title14,
+.title13,
+.title12,
+.title11,
+.title10,
+.title9,
+.title8,
+.title7,
+.title6,
+.title5,
+.title4,
+.title3,
+.title2,
+.title1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $color4;
+  font-weight: 800;
+}
+
+.title14,
+.title12,
+.title11,
+.title10,
+.title8,
+.title2,
+.title4,
+.title5,
+.title3 {
+  color: $color3;
+}
+
+.title7,
+.title6 {
+  color: $color1;
+}
+
+.title13,
+.title9 {
+  color: $color4;
+}
+
+.title6,
+.title2 {
+  font-size: 20px;
+}
+
+.title14,
+.title10,
+.title9,
+.title4 {
+  font-size: 30px;
+}
+
+.title11,
+.title5 {
+  font-size: 18px;
+}
+
+.title7 {
+  font-size: 14px;
+}
+
+.title8 {
+  font-size: 24px;
+}
+
+.title13 {
+  font-size: 16px;
+}
+
+.title13 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.title14,
+.title12,
+.title11,
+.title10,
+.title9,
+.title6 {
+  padding-bottom: 7px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    content: "";
+    background-color: $color3;
+  }
+}
+
+.title14,
+.title12,
+.title10,
+.title9 {
+  &::after {
+    width: 80px;
+    height: 5px;
+  }
+}
+
+.title14,
+.title12,
+.title11 {
+  &::after {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.title12 {
+  padding-bottom: 10px;
+}
+
+.title14 {
+  text-align: center;
+}
+
+.wrapTitle {
+  .titleMain {
+    color: $color3;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  span {
+    border: 2px solid $color30;
+    width: 100px;
+    margin: 15px auto 30px auto;
+    display: block;
+  }
+
+  &.titlePrimary {
+    .titleMain {
+      color: $color3;
+    }
+    span {
+      border-color: $color1;
+    }
+  }
+
+  &.titleSecondary {
+    .titleMain {
+      color: $color30;
+    }
+    span {
+      border-color: $color1;
+    }
+  }
+
+  &.titleLight {
+    .titleMain {
+      color: $color1;
+    }
+    span {
+      border-color: $color1;
+    }
+  }
+
+  &.titleLeft {
+    .titleMain {
+      text-align: left;
+    }
+    span {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapTitle {
+    .titleMain {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapTitle {
+    .titleMain {
+      font-size: 18px;
+    }
+
+    span {
+      margin-top: 10px;
+    }
+  }
+}

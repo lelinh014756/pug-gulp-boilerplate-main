@@ -1,0 +1,59 @@
+{
+  "general": {
+    "title_website": "Pug Gulp Boilerplate",
+    "description_website": "Pug Gulp Boilerplate",
+    "keywords_website": "Pug Gulp Boilerplate",
+    "url_favicon": "images/logo/logo.ico",
+    "url_website": "https://fastui.vercel.app/",
+    "created_website": "2022-10-11",
+    "position_website": "12.288247, 109.205426",
+    "placename_website": "Nha Trang, Khanh Hoa, Viet Nam",
+    "country_website": "VN",
+    "region_website": "VN-65",
+    "hreflang_website": "vi, en"
+  },
+  "header": {
+    "logo": "images/logo/logo.png",
+    "language": [
+      {
+        "url_img": "images/language/vi.jpg",
+        "title": "Việt Nam"
+      },
+      {
+        "url_img": "images/language/en.jpg",
+        "title": "English"
+      }
+    ],
+    "menu": [
+      {
+        "title": "Home",
+        "link": "index.html"
+      },
+      {
+        "title": "About",
+        "link": "about.html"
+      },
+      {
+        "title": "GitHub",
+        "link": "javascript:void(0)"
+      }
+    ]
+  },
+  "footer": {},
+  "page_home": {
+    "title_page": "Home",
+    "description_page": "Home",
+    "keywords_page": "Home",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts", "home"],
+    "js": ["lib", "home"]
+  },
+  "page_about": {
+    "title_page": "Home",
+    "description_page": "Home",
+    "keywords_page": "Home",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts", "about"],
+    "js": ["lib"]
+  }
+}

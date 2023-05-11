@@ -1,0 +1,68 @@
+.formContent {
+  margin-top: 30px;
+  $heightInputItem: 54px;
+
+  .lblItem {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $color2;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+  }
+
+  .inputGroupItem {
+    position: relative;
+    border: 1px solid $color6;
+    border-radius: 5px;
+  }
+
+  .iconItem {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 16px;
+    color: $color3;
+    width: 20px;
+    text-align: center;
+    transform: translate(0, -50%);
+    z-index: 0;
+    text-align: center;
+
+    svg {
+      height: $heightInputItem;
+      width: 15px;
+      display: inline-block;
+    }
+  }
+
+  .inputItem {
+    font-size: 16px;
+    line-height: $heightInputItem;
+    height: $heightInputItem;
+    padding: 0 15px 0 40px;
+    border: none;
+    width: 100%;
+    color: $color2;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  textarea {
+    &.inputItem {
+      border-radius: 3px;
+      padding: 10px 15px;
+      line-height: 26px;
+      height: unset;
+      display: block;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .inputItem {
+      line-height: 48px;
+      height: 48px;
+    }
+  }
+}

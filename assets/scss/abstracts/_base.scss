@@ -1,0 +1,130 @@
+html,
+body {
+  background-color: $color3;
+  color: $color2;
+}
+// container
+.wrapContainer {
+  margin-top: 48px;
+  transition: .5s;
+}
+
+.container-xxl {
+  max-width: 1420px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+// end container
+
+// background color
+.bgColor1 {
+  background-color: $color1;
+}
+
+.bgColor2 {
+  background-color: $color10;
+}
+
+.bgColor3 {
+  background-color: $color3;
+}
+
+.bgColor4 {
+  background-color: $color21;
+}
+// end background color
+
+// page content
+.wrapContent1 {
+  padding: 90px 0;
+}
+
+.wrapContent2 {
+  padding: 60px 0;
+}
+
+.wrapContent3 {
+  padding: 30px 0;
+}
+
+.wrapContent4 {
+  padding-bottom: 30px;
+}
+
+.wrapContent5 {
+  padding-top: 30px;
+}
+
+.wrapContent6 {
+  padding: 30px;
+}
+
+.wrapContent7 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.wrapContent8 {
+  margin-top: 60px;
+}
+
+.wrapContent9 {
+  margin-top: 30px;
+}
+
+.wrapContent10 {
+  padding-top: 60px;
+}
+
+.wrapContent11 {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 1615px) {
+  .wrapContent4 {
+    padding-top: 15px;
+  }
+
+  .wrapContent7 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .wrapContent8 {
+    margin-top: 30px;
+  }
+
+  .wrapContent9 {
+    margin-top: 15px;
+  }
+
+  .wrapContent11 {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapContent2 {
+    padding: 50px 0;
+  }
+  .wrapContent10 {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapContent1,
+  .wrapContent2 {
+    padding: 30px 0;
+  }
+  .wrapContent10 {
+    padding-top: 30px;
+  }
+}
+// end page content
+
+// keyframes
+@layer keyframes {
+}
+// end keyframes

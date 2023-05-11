@@ -1,0 +1,61 @@
+.wrapImgResize {
+  overflow: hidden;
+  position: relative;
+  display: block;
+
+  video,
+  iframe,
+  img {
+    object-fit: cover;
+    width: 101%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 101%;
+    max-height: 101%;
+    object-position: center;
+  }
+
+  &.img16And9 {
+    padding-top: 56.25%;
+  }
+
+  &.imgSquare {
+    padding-top: 100%;
+  }
+
+  &.img9And16 {
+    padding-top: 177%;
+  }
+
+  &.img3And4 {
+    padding-top: 133.33333333%;
+  }
+
+  &.imgSpecial1 {
+    padding-top: 75.46%;
+  }
+
+  &.imgCustom1 {
+    padding-top: 88.8888%;
+  }
+  &.imgCustom2 {
+    padding-top: 133.2402%;
+  }
+
+  &.imgCustom3 {
+    padding-top: 55.57%;
+  }
+  &.imgCustom4 {
+    padding-top: 46.5587%;
+  }
+
+  &.imgCustom5 {
+    padding-top: 64.6907%;
+  }
+  &.imgCustom6 {
+    padding-top: 63.8888%;
+  }
+}

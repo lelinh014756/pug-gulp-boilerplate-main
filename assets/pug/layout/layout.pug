@@ -1,0 +1,16 @@
+include ../mixin/mixin
+
+block vars
+    -data_page = []
+
+doctype html
+html(lang='en')
+    head
+        +head_setting(data_page)
+
+    body
+        block header
+
+        block content
+
+        block footer

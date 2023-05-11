@@ -1,0 +1,78 @@
+// color
+$color1: white;
+$color2: #333;
+$color3: #005479;
+$color4: #101820;
+$color5: #0888be;
+$color6: #ddd;
+$color7: rgba(236, 120, 30, 0.8);
+$color8: rgba(255, 255, 255, 0.65);
+$color9: rgba(255, 255, 255, 0.8);
+$color10: #e1e1e1;
+$color11: red;
+$color12: rgba(255, 255, 255, 0);
+$color13: rgba(255, 255, 255, 0.9);
+$color14: #777676;
+$color15: #cacaca;
+$color16: rgb(194, 174, 127, 0.8);
+$color17: #0e151c;
+$color18: rgba(255, 255, 255, 0.95);
+$color19: #f1f1f1;
+$color20: #e5e5e5;
+$color21: #302e2d;
+$color22: #eeeeee;
+$color23: #e8e2d9;
+$color24: #000000e6;
+$color25: #f5d400;
+$color26: rgba(0, 84, 121, 0.8);
+$color27: #022728;
+$color28: #d7d7d7;
+$color29: #dfdfdf;
+$color30: #ec781e;
+$color31: rgba(0, 0, 0, 0.7);
+$color32: rgba(0, 0, 0, 0.8);
+$color33: rgb(0, 175, 173, 0.1);
+$color34: #f3f3f3;
+$color35: rgba(255, 255, 255, 0.8);
+$color36: rgba(255, 255, 255, 0.6);
+
+
+// social color
+$colorFacebook: #0067e4;
+$colorYoutube: #f20000;
+$colorTwitter: #4ca2e5;
+$colorLinkedin: #0071ae;
+$colorInstagram: #e2416c;
+$colorVimeo: #19aede;
+$colorTripAdvisor: #31d599;
+$colorZalo: #00acd4;
+$colorWhatsapp: #00b907;
+
+// box shadow
+$boxShadow1: 0px 0px 15px 0px #00000080;
+$boxShadow2: 0px 0px 10px 2px #00000033;
+$boxShadow3: 0px 1px 10px 0px #0000001a;
+$boxShadow4: 5px 5px 5px 0px #0000001a;
+$boxShadow5: 0px 0px 0px 1px $color1;
+$boxShadow6: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+// text shadow
+$textShadow1: 0px -1px 0px $color1, 0px 1px 0px $color1, -1px 0px 0px $color1,
+  1px 0px 0px $color1;
+$textShadow2: 0px -1px 0px $color2, 0px 1px 0px $color2, -1px 0px 0px $color2,
+  1px 0px 0px $color2;
+
+// general
+$heightHeader: 48px;
+$heightHeaderBottom: 70px;
+$heightHeaderIP: 60px;
+$heightBtnControl: 50px;
+$heightHeaderTop: 44px;
+
+// list font
+$font1: "SFProRounded";
+$font2: "RobotoSlab";
+$font3: "SF-Pro-Display";
+$font4: "Quicksand";
+// end list font
