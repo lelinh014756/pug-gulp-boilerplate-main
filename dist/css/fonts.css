@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "SFProRounded";
+  src: url(../fonts/SFProRounded-Light.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "SFProRounded";
+  src: url(../fonts/SFProRounded-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SFProRounded";
+  src: url(../fonts/SFProRounded-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SFProRounded";
+  src: url(../fonts/SFProRounded-SemiBold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SFProRounded";
+  src: url(../fonts/SFProRounded-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url(../fonts/RobotoSlab-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url(../fonts/RobotoSlab-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url(../fonts/RobotoSlab-SemiBold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url(../fonts/RobotoSlab-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url(../fonts/SF-Pro-Display-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url(../fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url(../fonts/SF-Pro-Display-SemiBold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url(../fonts/SF-Pro-Display-Bold.otf);
+  font-weight: 700;
+}
