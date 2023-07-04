@@ -4,9 +4,9 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2013 Daniel Eden
 */
-.animated {
-  visibility: hidden;
-}
+// .animated {
+//   visibility: hidden;
+// }
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -1540,6 +1540,44 @@ Copyright (c) 2013 Daniel Eden
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
 }
+.fadeFromUp {
+  -webkit-animation-name: fadeFromUp;
+  animation-name: fadeFromUp;
+}
+.fadeFromLeft {
+  -webkit-animation-name: fadeFromLeft;
+  animation-name: fadeFromLeft;
+}
+
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 @-webkit-keyframes flip {
   0% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
@@ -2846,7 +2884,8 @@ Copyright (c) 2013 Daniel Eden
     z-index: 2;
     // animation-delay: 3s !important;
     // transform-origin: left center;
-    animation: slideImgCardToLeft 1s cubic-bezier(0.565, 0.43, 0.24, 0.92) forwards;
+    animation: slideImgCardToLeft 1s cubic-bezier(0.565, 0.43, 0.24, 0.92)
+      forwards;
   }
 }
 
@@ -2894,7 +2933,7 @@ Copyright (c) 2013 Daniel Eden
     z-index: 2;
     // animation-delay: 3s !important;
     // transform-origin: left center;
-    animation: slideImgCardToRight 1s cubic-bezier(0.565, 0.43, 0.24, 0.92) forwards;
+    animation: slideImgCardToRight 1s cubic-bezier(0.565, 0.43, 0.24, 0.92)
+      forwards;
   }
 }
-

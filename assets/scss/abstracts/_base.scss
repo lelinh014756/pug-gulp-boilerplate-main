@@ -2,7 +2,18 @@ html,
 body {
   background-color: $color3;
   color: $color2;
+  overflow-x: hidden;
+
 }
+
+body {
+  opacity: 0;
+  &.showContent {
+    opacity: 1;
+  }
+}
+
+
 // container
 .wrapContainer {
   margin-top: 48px;
@@ -124,7 +135,37 @@ body {
 }
 // end page content
 
-// keyframes
-@layer keyframes {
+// scroll bar
+$color-track: #eeeeee;
+$color-thumb: #cacaca;
+$color-thumb-hover: $color3;
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
 }
-// end keyframes
+
+::-webkit-scrollbar-track {
+  background: $color-track;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-thumb;
+  @include borderRadius(0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-thumb-hover;
+}
+
+@media (max-width: 1199px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @include borderRadius(0);
+  }
+}
+// end scroll bar
