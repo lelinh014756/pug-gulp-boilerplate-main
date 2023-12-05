@@ -1,0 +1,75 @@
+/* || ======================= Text Editor Content ======================= || */
+.wrapTextEditor {
+    text-align: justify;
+    margin-top: 20px;
+
+    *{
+        padding: initial;
+        margin: initial;
+    }
+
+    >* {
+        margin-bottom: 15px;
+    }
+
+    >*:last-child {
+        margin-bottom: 0;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        overflow-x: hidden;
+        @include borderRadius(4px);
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    em {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    ul {
+        list-style: initial;
+        padding-left: 22px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        margin-top: 15px;
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+    }
+
+    @media only screen and (max-width: 739px) {
+        margin-top: 15px;
+        font-size: 14px;
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 10px;
+        }
+    }
+}

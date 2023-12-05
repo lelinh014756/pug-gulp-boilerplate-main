@@ -3,11 +3,9 @@
   padding-top: 40px;
   padding-bottom: 20px;
   .heading {
-    @include text30;
     margin-bottom: 5px;
   }
   .desc {
-    @include text20;
   }
   .headerNavList {
     display: flex;

@@ -53,21 +53,8 @@
 			],
 			"js": [
 				"lib",
+				"base",
 				"home"
-			]
-		},
-		"page_about": {
-			"title_page": "Home",
-			"description_page": "Home",
-			"keywords_page": "Home",
-			"url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
-			"css": [
-				"lib",
-				"fonts",
-				"about"
-			],
-			"js": [
-				"lib"
 			]
 		}
 	}

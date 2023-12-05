@@ -1,0 +1,96 @@
+.wrapPagination {
+    margin: auto;
+    text-align: center;
+    display: table;
+    margin-top: 60px;
+
+    @include downLg {
+        margin-top: 40px;
+    }
+}
+
+.pagingItem {
+    position: relative;
+    font-size: 16px;
+    @include transition(0.3s);
+    float: left;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    background-color: $color1;
+    @include borderRadius(100%);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+    z-index: 1;
+    overflow: hidden;
+
+    &:not(.active)::after {
+        position: absolute;
+        width: 110%;
+        padding-top: 110%;
+        top: 50%;
+        left: 50%;
+        background-color: $color1;
+        content: "";
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        z-index: -1;
+        pointer-events: none;
+        transition: .5s;
+        border-radius: 100%;
+    }
+
+    svg {
+        display: inline-block;
+        height: 20px;
+    }
+
+    &.active {
+        background-color: $color3;
+        &:hover {
+            color: $color2 !important;
+            background-color: $color3 !important;
+        }
+    }
+
+    &:hover {
+        color: $color2;
+        background-color: $color3;
+        &::after {
+            transform: translate3d(-50%, -50%, 0) scale(0);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .wrapPagination {
+        margin-top: 30px;
+    }
+
+    .pagingItem {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+
+        svg {
+            width: 15px;
+            height: 18px;
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .pagingItem {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+
+        svg {
+            width: 10px;
+            height: 14px;
+        }
+    }
+}

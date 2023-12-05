@@ -1,0 +1,108 @@
+/* =============== || Down Screen || =============== */
+@mixin downMobileSmall {
+    @media only screen and (max-width: 456px) {
+        @content;
+    }
+}
+
+@mixin downXs { 
+    @media only screen and (max-width: 376px) {
+        @content;
+    }
+}
+
+@mixin downSm {
+    @media only screen and (max-width: 576px) {
+
+        @content;
+    }
+}
+
+@mixin downMd {
+    @media only screen and (max-width: 767px) {
+
+        @content;
+    }
+}
+
+@mixin downLg {
+    @media only screen and (max-width: 991px) {
+
+        @content;
+    }
+}
+
+@mixin downXl {
+    @media only screen and (max-width: 1200px) {
+
+        @content;
+    }
+}
+
+@mixin downXxl {
+    @media only screen and (max-width: 1400px) {
+
+        @content;
+    }
+}
+
+/* =============== || Up Screen || =============== */
+
+@mixin upSm {
+    @media only screen and (min-width: 577px) {
+        @content;
+    }
+}
+
+@mixin upMd {
+    @media only screen and (min-width: 768px) {
+
+        @content;
+    }
+}
+
+@mixin upLg {
+    @media only screen and (min-width: 992px) {
+
+        @content;
+    }
+}
+
+@mixin upXl {
+    @media only screen and (min-width: 1201px) {
+        
+        @content;
+    }
+}
+@mixin upXxl {
+    @media only screen and (min-width: 1401px) {
+
+        @content;
+    }
+}
+
+/* =============== || Custom Down Screen || =============== */
+@mixin down-1600 {
+    @media only screen and (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin down-1300 {
+    @media only screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin down-1220 {
+    @media only screen and (max-width: 1220px) {
+        @content;
+    }
+}
+
+/* =============== || Custom Down Screen || =============== */
+@mixin up-1221 {
+    @media only screen and (min-width: 1221px) {
+        @content;
+    }
+}

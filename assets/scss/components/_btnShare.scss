@@ -1,0 +1,114 @@
+.wrapShare {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+
+  .titleShare {
+      margin-right: 15px;
+      font-weight: 700;
+      margin-bottom: 0;
+      white-space: nowrap;
+  }
+
+  .st-btn {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.copied {
+          pointer-events: none;
+          background-color: #16a34a !important;
+      }
+  }
+
+  .st-btn>svg {
+      display: inline-block;
+      color: white;
+  }
+
+  .st-btn[data-network='zalo'] {
+      padding: 0 3px !important;
+      min-width: 36px;
+  }
+
+  .zalo-share-button {
+      height: 100%;
+      position: relative;
+
+      &::before {
+          -webkit-animation: button-loading-spinner .7s linear infinite;
+          animation: button-loading-spinner 1s linear infinite;
+          border: 3px solid;
+          border-color: #fff #fff transparent;
+          border-radius: 50%;
+          content: "";
+          left: 50%;
+          margin-left: -10px;
+          margin-top: -10px;
+          position: absolute;
+          top: 50%;
+          width: 20px;
+          height: 20px;
+          background: none;
+          pointer-events: none;
+      }
+  }
+
+  .share-inline-share-buttons {
+      white-space: nowrap;
+  }
+
+  @media (max-width: 991px) {
+      margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+      margin-top: 20px;
+      .titleShare {
+         font-size: 14px;
+      }
+  }
+}
+
+@keyframes button-loading-spinner {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(1turn);
+  }
+}
+
+.st-close {
+  span {
+      display: none;
+      font-size: 16px;
+      font-weight: 600;
+  }
+
+  @media (max-width: 991px) {
+      bottom: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      border-radius: 0 !important;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      -ms-border-radius: 0 !important;
+      -o-border-radius: 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px !important;
+
+      span {
+          display: block;
+      }
+
+      svg {
+          display: none;
+      }
+  }
+}

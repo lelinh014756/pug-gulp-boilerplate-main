@@ -18,6 +18,10 @@
     object-position: center;
   }
 
+  img.object-contain {
+    object-fit: contain;
+  }
+
   &.img16And9 {
     padding-top: 56.25%;
   }

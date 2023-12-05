@@ -1,0 +1,74 @@
+.showScrollTop .wrapBtnScrollTop {
+  @include translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapBtnScrollTop {
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  bottom: 44px;
+  @include transition(0.5s ease-in-out);
+  @include translateY(60px);
+  opacity: 0;
+  visibility: hidden;
+
+  .linkItem {
+    background-color: $color3;
+    text-align: center;
+    @include borderRadius(50%);
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    color: $color1;
+    right: 15px;
+    @include transition(0.5s);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $color3;
+  }
+
+  svg {
+    height: 22px;
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .scrollBottom .wrapBtnScrollTop {
+    bottom: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapBtnScrollTop {
+    .linkItem:hover {
+      background-color: $color1;
+      color: $color3;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapBtnScrollTop {
+    bottom: 60px;
+    right: 22px;
+
+    .linkItem {
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      width: 38px;
+      height: 18px;
+    }
+  }
+
+  .isBottom .wrapBtnScrollTop {
+    @include translateY(-66px);
+  }
+}

@@ -1,4 +1,6 @@
-// color
+/* =========================
+        Color
+========================= */
 $color1: white;
 $color2: #333;
 $color3: #005479;
@@ -37,7 +39,9 @@ $color35: rgba(255, 255, 255, 0.8);
 $color36: rgba(255, 255, 255, 0.6);
 
 
-// social color
+/* =========================
+        Social Color
+========================= */
 $colorFacebook: #0067e4;
 $colorYoutube: #f20000;
 $colorTwitter: #4ca2e5;
@@ -48,7 +52,9 @@ $colorTripAdvisor: #31d599;
 $colorZalo: #00acd4;
 $colorWhatsapp: #00b907;
 
-// box shadow
+/* =========================
+        Box Shadow
+========================= */
 $boxShadow1: 0px 0px 15px 0px #00000080;
 $boxShadow2: 0px 0px 10px 2px #00000033;
 $boxShadow3: 0px 1px 10px 0px #0000001a;
@@ -57,13 +63,17 @@ $boxShadow5: 0px 0px 0px 1px $color1;
 $boxShadow6: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -2px rgba(0, 0, 0, 0.1);
 
-// text shadow
+/* =========================
+        Text Shadow
+========================= */
 $textShadow1: 0px -1px 0px $color1, 0px 1px 0px $color1, -1px 0px 0px $color1,
   1px 0px 0px $color1;
 $textShadow2: 0px -1px 0px $color2, 0px 1px 0px $color2, -1px 0px 0px $color2,
   1px 0px 0px $color2;
 
-// general
+/* =========================
+        Size
+========================= */
 $heightHeader: 48px;
 $heightHeaderBottom: 90px;
 $heightHeaderMobile: 65px;
@@ -71,9 +81,8 @@ $heightBtnControl: 50px;
 $heightHeaderTop: 56px;
 $MrLeftItemMenu: 30px;
 
-// list font
+/* =========================
+        Font
+========================= */
 $font1: "SFProRounded";
-$font2: "RobotoSlab";
-$font3: "SF-Pro-Display";
-$font4: "Quicksand";
-// end list font
+$font2: "Roboto";
