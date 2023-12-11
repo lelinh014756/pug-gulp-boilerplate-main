@@ -1,174 +1,96 @@
-// button
+/* =================================
+              BUTTON
+================================= */
 .btn1 {
-    text-transform: uppercase;
-    color: $color1;
-    background-color: $color3;
-    font-weight: 800;
-    border-radius: 30px;
-    transition: .5s;
-    padding: 15px 25px;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    border: 2px solid $color3;
-  
-    &.btnSmall {
-      padding: 10px 20px;
-    }
-  
-    svg {
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      transform: translate(0, -2px);
-      margin-left: 2px;
-    }
-  
-    &::after {
-      position: absolute;
-      width: 110%;
-      padding-top: 110%;
-      top: 50%;
-      left: 50%;
-      background-color: $color3;
-      content: "";
-      transform: translate3d(-50%, -50%, 0) scale(1);
-      z-index: -1;
-      pointer-events: none;
-      transition: .5s;
-      border-radius: 100%;
-    }
-  
-    &:hover {
-      color: $color3;
-      background-color: $color1;
-  
-      &::after {
-        transform: translate3d(-50%, -50%, 0) scale(0);
-      }
-    }
+  text-transform: uppercase;
+  color: $color1;
+  background-color: $color3;
+  font-weight: 800;
+  border-radius: 30px;
+  transition: .5s;
+  padding: 15px 25px;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border: 2px solid $color3;
+
+  &.btnSmall {
+    padding: 10px 20px;
   }
-  
-  .btn2 {
-    text-transform: uppercase;
+
+  svg {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transform: translate(0, -2px);
+    margin-left: 2px;
+  }
+
+  &::after {
+    position: absolute;
+    width: 110%;
+    padding-top: 110%;
+    top: 50%;
+    left: 50%;
+    background-color: $color3;
+    content: "";
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    z-index: -1;
+    pointer-events: none;
+    transition: .5s;
+    border-radius: 100%;
+  }
+
+  &:hover {
     color: $color3;
-    background-color: transparent;
-    font-weight: 800;
-    transition: .5s;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    font-size: 14px;
-  
-    svg {
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      transform: translate(0, -2px);
-      margin-left: 2px;
-      transition: .5s;
-    }
-  
-    &:hover {
-      color: $color5;
-  
-      svg {
-        transform: translate(5px, -2px);
-      }
-    }
-  }
-  
-  .btnSecondary {
-    background-color: $color30;
-    border-color: $color30;
-    &:hover {
-      color: $color30;
-    }
+    background-color: $color1;
+
     &::after {
-      background-color: $color30;
+      transform: translate3d(-50%, -50%, 0) scale(0);
     }
   }
-  
-  .btn6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color3;
-    text-transform: uppercase;
+}
+
+// social
+.wrapSocial {
+  .titleFooter {
+    margin: 0 0 10px 0;
+  }
+
+  .titleItem {
     color: $color1;
-    background-color: $color3;
-    font-weight: 500;
-    border-radius: 5px;
+    margin: 0;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+
+  .listItem {
+    @include clearfix();
+  }
+
+  a {
+    display: block;
+    margin-left: 16px;
     transition: .5s;
-    padding: 15px 25px;
-    text-align: center;
-    border: none;
-    font-size: 20px;
-    font-weight: 500;
-  
+    float: left;
+    color: $color4;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
     svg {
-      width: 16px;
-      margin-left: 8px;
+      display: block;
+      height: 17px;
+      width: auto;
     }
-  
-    &.border {
-      border: 1px solid white;
-    }
-  
+
     &:hover {
       color: $color3;
-      background-color: $color1;
     }
   }
-  
-  @media (max-width: 767px) {
-    .btn1 {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  }
-  // end button
-  
-  // social
-  .wrapSocial {
-    .titleFooter {
-      margin: 0 0 10px 0;
-    }
-  
-    .titleItem {
-      color: $color1;
-      margin: 0;
-      font-weight: 800;
-      text-transform: capitalize;
-    }
-  
-    .listItem {
-      @include clearfix();
-    }
-  
-    a {
-      display: block;
-      margin-left: 16px;
-      transition: .5s;
-      float: left;
-      color: $color4;
-  
-      &:first-child {
-        margin-left: 0;
-      }
-  
-      svg {
-        display: block;
-        height: 17px;
-        width: auto;
-      }
-  
-      &:hover {
-        color: $color3;
-      }
-    }
-  }
-  // end social
-  
+}
+
+// end social
